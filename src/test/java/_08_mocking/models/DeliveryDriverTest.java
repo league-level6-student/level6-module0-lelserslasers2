@@ -33,6 +33,7 @@ class DeliveryDriverTest {
     void itShouldWasteTime() {
         //given
     	boolean expected = true;
+    	when(cp.browseCatMemes()).thenReturn(true);
 
         //when
     	boolean actual = dd.wasteTime();
@@ -45,6 +46,7 @@ class DeliveryDriverTest {
     void itShouldRefuel() {
         //given
     	boolean expected = true;
+    	when(car.fillTank(85)).thenReturn(true);
 
         //when
     	boolean actual = dd.refuel(85);
@@ -58,6 +60,7 @@ class DeliveryDriverTest {
         //given
     	String number = "555-555-5555";
     	boolean expected = true;
+    	when(cp.call(number)).thenReturn(true);
 
         //when
     	boolean actual = dd.contactCustomer(number);

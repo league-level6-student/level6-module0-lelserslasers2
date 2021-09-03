@@ -4,13 +4,13 @@ public class Rocketship {
 
     private double gallonsOfFuel;
 
-    private boolean rocketsIgnited;
+    public boolean rocketsIgnited;
 
     private String destination;
 
     private int milesToDestination;
 
-    private Astronaut astronaut;
+    public Astronaut astronaut;
 
     public Rocketship() {
     }

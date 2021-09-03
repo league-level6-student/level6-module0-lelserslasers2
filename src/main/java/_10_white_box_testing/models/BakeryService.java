@@ -8,6 +8,7 @@ public class BakeryService {
         this.donutsRemaining += 50;
     }
 
+
     public void throwAwayLeftovers() {
         this.donutsRemaining = 0;
     }
